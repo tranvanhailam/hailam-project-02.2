@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: Poppins, sans-serif;
+}
+
+/* Common */
+.content{
+    width: 1171px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Header */
+
+.header .body{
+    display: flex;
+}

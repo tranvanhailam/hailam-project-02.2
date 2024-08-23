@@ -1,30 +1,333 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-html{
+:root {
+    --primary-color: #1ebfc1;
+    --font-heading: #0d1111;
+}
+
+html {
     font-size: 62.5%;
 }
 
-body{
+body {
     font-size: 1.6rem;
     font-family: Poppins, sans-serif;
 }
 
 /* Common */
-.content{
-    width: 1171px;
+.content {
+    width: 1170px;
     max-width: calc(100% - 48px);
     margin-left: auto;
     margin-right: auto;
 }
 
-a{
+.heading {
+    color: var(--font-heading);
+    font-weight: 700;
+}
+
+.heading.lv1 {
+    font-size: 6.2rem;
+    line-height: 1.16;
+}
+
+a {
     text-decoration: none;
+}
+
+.btn {
+    min-width: 186px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border-radius: 14px;
+    background: #2ac9bf;
+    padding: 20px 41px;
+}
+
+.btn:hover {
+    opacity: 0.85;
 }
 
 /* Header */
 
-.header .body{
+.fixed {
+    position: sticky;
+    top: -40px;
+    z-index: 1;
+}
+
+.header .body {
     display: flex;
+    background: #fff;
+    align-items: center;
+}
+
+.header .body {
+    padding: 52px 0 8px;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.nav ul {
+    display: flex;
+}
+.nav li {
+    margin-right: 39px;
+    color: #2f3a3b;
+    font-size: 1.6rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.nav .active,
+.nav li:hover {
+    color: #2f3a3b;
+    font-size: 1.6rem;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.action .action-link {
+    color: #494949;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 24px 0 177px;
+}
+
+.action .action-link:hover {
+    opacity: 0.75;
+}
+
+.action .action-btn {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: 1px solid var(--primary-color);
+    font-weight: 600;
+}
+
+.action .action-btn:hover {
+    opacity: 0.8;
+}
+
+/* Hero */
+
+.hero {
+    margin: 50px 0 79px 0;
+}
+
+.hero .body {
+    display: flex;
+}
+
+/* Hero left */
+
+.hero-left {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-left .label {
+    color: #767e7e;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.hero-left .title {
+    margin-top: 18px;
+    width: 458px;
+}
+
+.hero-left .desc {
+    margin-top: 46px;
+    width: 374px;
+    color: #9da6a5;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.78; /* 177.778% */
+}
+
+.hero-left .cta-group {
+    display: flex;
+    align-items: center;
+    margin-top: 52px;
+}
+
+.hero-left .play {
+    margin-left: 50px;
+    border: none;
+    width: 62px;
+    height: 62px;
+    border-radius: 62px;
+    background: #fff;
+    box-shadow: 0px 22px 50px 0px rgba(0, 0, 0, 0.05);
+}
+
+/* Hero right */
+.hero-right {
+    width: 55%;
+    position: relative;
+}
+
+.hero-right .img {
+    display: block;
+    margin-left: auto;
+    background: #e0f7f6;
+    width: 576px;
+    height: 631px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Hero courses */
+
+.hero-summary-courses {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 459px;
+    top: 149px;
+    width: 157px;
+    border-radius: 18px;
+    padding: 18px 25px;
+    background: #fefefd;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero-summary-courses .icon {
+    display: inline-block;
+    position: relative;
+}
+
+.hero-summary-courses .line-book {
+    position: absolute;
+    display: inline-block;
+    bottom: 26px;
+    right: 100px;
+}
+
+.hero-summary-courses .title {
+    margin-left: 16px;
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* Hero schedules */
+
+.hero-summary-schedules {
+    position: absolute;
+    right: 517px;
+    bottom: 46px;
+    padding: 16px 25px 23px;
+    width: 124px;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero-summary-schedules .title {
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.hero-summary-schedules .lines {
+    margin-top: 12px;
+    display: flex;
+}
+
+.hero-summary-schedules .lines:first-of-type .line-child {
+    width: 39px;
+    height: 6px;
+    border-radius: 3px;
+    background: #fb9899;
+}
+
+.hero-summary-schedules .lines {
+    width: 74px;
+    height: 6px;
+    border-radius: 3px;
+    background: #edf1f5;
+}
+
+.hero-summary-schedules .lines:nth-of-type(2) .line-child {
+    width: 51px;
+    height: 6px;
+    border-radius: 3px;
+    background: #fb9899;
+}
+
+.hero-summary-schedules .lines:nth-of-type(3) .line-child {
+    width: 33px;
+    height: 6px;
+    border-radius: 3px;
+    background: #fb9899;
+}
+
+.hero-summary-schedules .lines:last-of-type {
+    width: 26px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Hero students */
+.hero-summary-students {
+    position: absolute;
+    padding: 17px 35px;
+    right: 45px;
+    bottom: 41px;
+    width: 207px;
+    border-radius: 24px;
+    background: #fefefd;
+    box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero-summary-students .title {
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.hero-summary-students .avatar-group {
+    margin-top: 8px;
+    display: flex;
+}
+
+.avatar-group .avatar:first-child{
+    margin-left: 0;
+}
+
+.avatar-group .avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin-left: -3px;
+
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.avatar-group .avatar span{
+    padding: 9px 5px;
 }

@@ -45,9 +45,11 @@ a {
 }
 
 .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-width: 186px;
     color: #fff;
-    text-align: center;
     font-size: 1.8rem;
     font-weight: 600;
     border-radius: 14px;
@@ -457,6 +459,7 @@ a {
     border-radius: 8px;
     background: #fff;
     box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+    /* padding-bottom: -37px; */
 }
 
 .course-item .title {
@@ -506,4 +509,185 @@ a {
     width: 6px;
     height: 6px;
     border-radius: 50%;
+}
+
+/* Quantity */
+.qty {
+    margin-top: 228px;
+}
+
+.qty .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 155px;
+    margin: 0 auto;
+}
+
+.qty-item .qty-title {
+    color: #0d1111;
+    text-align: center;
+    font-size: 62px;
+    font-weight: 700;
+}
+
+.qty-item .qty-desc {
+    margin-top: 11px;
+    color: #767e7e;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+/* Feedback */
+
+.feedback {
+    margin-top: 264px;
+}
+
+.feedback-list .feedback-item {
+    display: flex;
+}
+.feedback-item .feedback-content {
+    width: 36%;
+    padding: 38px 0;
+}
+
+.feedback-content .quote-content {
+    margin-top: 27px;
+    color: #5d6564;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1.5; /* 150% */
+}
+
+.feedback-content .info::before {
+    content: "";
+    width: 8px;
+    height: 2px;
+    margin-right: 5px;
+    background: #070707;
+}
+
+.feedback-content .info {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 33px;
+    color: #767e7e;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.feedback-content .info strong {
+    color: #070707;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.feedback-content .controls {
+    display: flex;
+    gap: 30px;
+    margin-top: 52px;
+}
+
+.feedback-content .controls .control-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #2ac9bf;
+    cursor: pointer;
+}
+
+.feedback-item .avatar-group {
+    width: 64%;
+    position: relative;
+}
+
+.feedback-item .avatar-group .avatar {
+    border-radius: 50%;
+    display: inline-block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.feedback-item .avatar-group .avatar:first-child {
+    background: #1ebfc1;
+    width: 92px;
+    height: 92px;
+    position: absolute;
+    left: 216px;
+    top: 0;
+}
+
+.feedback-item .avatar-group .avatar:nth-child(2) {
+    background: #bf83ff;
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    left: 641px;
+    top: 20px;
+}
+
+.feedback-item .avatar-group .avatar:nth-child(3) {
+    background: #ff8282;
+    width: 235px;
+    height: 235px;
+    position: absolute;
+    left: 345px;
+    top: 102px;
+}
+
+.feedback-item .avatar-group .avatar:nth-child(4) {
+    background: #ffc147;
+    width: 78px;
+    height: 78px;
+    position: absolute;
+    left: 72px;
+    top: 260px;
+}
+
+.feedback-item .avatar-group .avatar:nth-child(5) {
+    background: #ff947a;
+    width: 78px;
+    height: 78px;
+    position: absolute;
+    top: 400px;
+    left: 284px;
+}
+
+.feedback-item .avatar-group .avatar:last-child {
+    background: #b1dfdc;
+    width: 78px;
+    height: 78px;
+    position: absolute;
+    left: 641px;
+    top: 375px;
+}
+
+/* Create acc */
+
+.create-acc {
+    padding: 76px 0 88px;
+    background: #def6f5;
+    margin-top: 130px;
+}
+
+.create-acc .row {
+    display: flex;
+    align-items: center;
+}
+
+.create-acc .info {
+    width: 36%;
+    margin-right: 410px;
+}
+
+.create-acc .desc {
+    margin-top: 18px;
+    color: #767e7e;
+    font-size: 1.8rem;
+    font-weight: 400;
 }

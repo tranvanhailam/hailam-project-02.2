@@ -544,8 +544,16 @@ a {
     margin-top: 264px;
 }
 
+.feedback .feedback-list{
+    display: flex;
+    overflow: hidden;
+    transition: all ease 0.3;
+}
+
 .feedback-list .feedback-item {
     display: flex;
+    width: 100%;
+    flex-shrink: 0;
 }
 .feedback-item .feedback-content {
     width: 36%;
@@ -597,7 +605,14 @@ a {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    background: transparent;    
+    border: 1px solid #2ac9bf;
+    color: #2ac9bf;
+}
+
+.feedback-content .controls .control-btn:hover{
     background: #2ac9bf;
+    color: #fff;
     cursor: pointer;
 }
 
@@ -690,4 +705,59 @@ a {
     color: #767e7e;
     font-size: 1.8rem;
     font-weight: 400;
+}
+
+/* Footer */
+.footer {
+    padding: 130px 0 50px;
+}
+
+.footer .row {
+    display: flex;
+}
+
+.footer .column {
+    width: 20%;
+}
+
+.footer .row .column:last-of-type {
+    width: 12%;
+    margin-left: auto;
+}
+
+.footer .title {
+    color: #2e2e2e;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.footer .list {
+    margin-top: 8px;
+}
+
+.footer .item {
+    margin-top: 18px;
+}
+
+.footer .item a {
+    color: #535353;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.footer .row .column:last-of-type .item a {
+    display: flex;
+    align-items: center;
+}
+
+.footer .row .column:last-of-type .item .icon {
+    margin-right: 9px;
+}
+
+.footer .copy-right-desc {
+    color: #b0b5b4;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-top: 80px;
+    text-align: center;
 }
